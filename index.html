@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>修仙模拟器</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="main-panel">
+      <div class="character-info">
+        <h2>修仙者信息</h2>
+        <div id="stats">
+          <p>道号: <span id="playerName">未定</span></p>
+          <p>境界: <span id="level">练气期</span></p>
+          <p>灵力: <span id="spiritual">0</span></p>
+          <p>体质: <span id="physical">0</span></p>
+          <p>悟性: <span id="wisdom">0</span></p>
+          <p>机缘: <span id="luck">0</span></p>
+          <p>宗门: <span id="sect">无</span></p>
+        </div>
+      </div>
+      
+      <div class="actions">
+        <button id="initCharacter">转世重修</button>
+        <button id="explore">外出探索</button>
+        <button id="cultivate">闭关修炼</button>
+        <button id="joinSect">拜入宗门</button>
+      </div>
+    </div>
+    
+    <div class="log-panel">
+      <h3>修仙记录</h3>
+      <div id="gameLog"></div>
+    </div>
+  </div>
+  
+  <div id="initModal" class="modal">
+    <div class="modal-content">
+      <h2>转世重修</h2>
+      <div class="init-stats">
+        <label>道号: <input type="text" id="nameInput"></label>
+        <label>灵力: <input type="number" id="spiritualInput" min="0"></label>
+        <label>体质: <input type="number" id="physicalInput" min="0"></label>
+        <label>悟性: <input type="number" id="wisdomInput" min="0"></label>
+        <label>机缘: <input type="number" id="luckInput" min="0"></label>
+      </div>
+      <button id="confirmInit">确认</button>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
